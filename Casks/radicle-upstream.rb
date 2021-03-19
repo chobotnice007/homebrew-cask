@@ -1,6 +1,6 @@
 cask "radicle-upstream" do
-  version "0.1.9"
-  sha256 "af00d268ef33c44360796e1c05a3fd09ff4b3a1cf96bd70e759913f558240777"
+  version "0.1.12"
+  sha256 "77e39edd1eee90862cb056d02b77881615e5c68199d6731768ecc6c2da97d4cd"
 
   url "https://releases.radicle.xyz/radicle-upstream-#{version}.dmg"
   appcast "https://github.com/radicle-dev/radicle-upstream/releases.atom"

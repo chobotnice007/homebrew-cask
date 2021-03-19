@@ -1,6 +1,6 @@
 cask "pushplaylabs-sidekick" do
-  version "87.7.42.7010,65eac33"
-  sha256 "132ac1e201ba00b9f148830b82e24a612e8c028c0e296c4c6388c44efc73b209"
+  version "88.8.43.7639,4eb7031"
+  sha256 "8b7ff6cdf19d4538f158bd935d168b0e06f6080634266f22fa25930e0a71bb87"
 
   url "https://cdn.meetsidekick.com/builds/sidekick-mac-release-x64-#{version.before_comma}-#{version.after_comma}-df.dmg"
   name "Sidekick"

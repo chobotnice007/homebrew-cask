@@ -1,6 +1,6 @@
 cask "anydo" do
-  version "4.2.136"
-  sha256 "2fba09baca6ea086ed652a5fd49471f77f306b11ff68d418ef3b42f20d11ce94"
+  version "4.2.143"
+  sha256 "8030afec552028aac76cf69fbb8e3ff6e7ced6cbaaebf4c13636fed7b230b271"
 
   url "https://electron-app.any.do/Any.do-#{version}.dmg"
   name "Any.do"
@@ -9,8 +9,9 @@ cask "anydo" do
 
   livecheck do
     url "https://electron-app.any.do/latest-mac.yml"
-    strategy :page_match
-    regex(/version: (\d+(?:\.\d+)*)/i)
+    strategy :page_match do |page|
+      YAML.safe_load(page)["version"]
+    end
   end
 
   depends_on macos: ">= :catalina"

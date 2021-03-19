@@ -1,14 +1,12 @@
 cask "notion" do
-  version "2.0.11"
-
   if Hardware::CPU.intel?
-    sha256 "5b549f7ccc4738808ba997b22e63d626dbd79b9d7c544901fca7a9fe0a3073f8"
-
+    version "2.0.16"
+    sha256 "a1213c8b9fb976ca380df3a506f214f3cc6871b89e1290acb54433698bd78ce4"
     url "https://desktop-release.notion-static.com/Notion-#{version}.dmg",
         verified: "desktop-release.notion-static.com/"
   else
-    sha256 "aed019ddac9fdd72c8595214971366374da66d15e267786ac4f9e9055a4d44ed"
-
+    version "2.0.13"
+    sha256 "abe3dd4adc5fc4ba591be2f031e22cb0c43ce2d5503fe925b005231e7941d5bf"
     url "https://desktop-release.notion-static.com/Notion-#{version}-arm64.dmg",
         verified: "desktop-release.notion-static.com/"
   end
